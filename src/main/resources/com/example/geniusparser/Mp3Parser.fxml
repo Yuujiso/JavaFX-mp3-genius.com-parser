@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="535.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geniusparser.Mp3Parser">
+    <Button fx:id="processButton" layoutX="320.0" layoutY="110.0" mnemonicParsing="false" onAction="#onSaveButtonClick"
+            prefHeight="25.0" prefWidth="70.0" text="SAVE"/>
+    <Button fx:id="clearButton" layoutX="320.0" layoutY="153.0" mnemonicParsing="false" onAction="#onClearButtonClick"
+            prefHeight="25.0" prefWidth="70.0" text="CLEAR"/>
+    <TextArea fx:id="lyrics" layoutX="15.0" layoutY="295.0" prefHeight="226.0" prefWidth="271.0"/>
+    <TextField fx:id="path" layoutX="15.0" layoutY="68.0" prefHeight="25.0" prefWidth="271.0"/>
+    <Button fx:id="prevPage" layoutX="299.0" layoutY="14.0" mnemonicParsing="false" onAction="#onPrevPageClick"
+            prefHeight="25.0" prefWidth="113.0" text="PREV PAGE"/>
+    <Label layoutX="15.0" layoutY="40.0" prefHeight="25.0" prefWidth="271.0" text="MP3 FILE PATH"/>
+    <Label layoutX="15.0" layoutY="271.0" prefHeight="25.0" prefWidth="271.0" text="LYRICS"/>
+    <TextField fx:id="title" layoutX="15.0" layoutY="128.0" prefHeight="25.0" prefWidth="271.0"/>
+    <TextField fx:id="artist" layoutX="15.0" layoutY="185.0" prefHeight="25.0" prefWidth="271.0"/>
+    <TextField fx:id="genre" layoutX="15.0" layoutY="243.0" prefHeight="25.0" prefWidth="271.0"/>
+    <Label layoutX="15.0" layoutY="97.0" prefHeight="25.0" prefWidth="271.0" text="TITLE"/>
+    <Label layoutX="15.0" layoutY="157.0" prefHeight="25.0" prefWidth="271.0" text="ARTIST"/>
+    <Label layoutX="15.0" layoutY="214.0" prefHeight="25.0" prefWidth="271.0" text="GENRE"/>
+    <Button layoutX="320.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="BROWSE"
+            onAction="#onBrowseClick"/>
+</AnchorPane>
